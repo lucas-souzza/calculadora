@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #06283d, #00355a, #004179, #004d98, #0057b7, #0262c8, #026dd9, #0079ea, #0089f1, #1598f7, #2fa7fb, #47b5ff);
+    font-weight: 400;
+}
+
+
+
+.calculadora {
+    min-width: 280px;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 8px;
+    background-color: #ffffffce;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+} 
+
+.calculadora__resultado {
+    font-family: 'Source Code Pro', monospace;
+    grid-row: span 2;
+    grid-column: span 4;
+    border-radius: 8px;
+    background-color: #06283D;
+    font-size: 32px;
+    color: #DFF6FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 16px;
+    padding:  20px 32px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.calculadora__linha {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 8px;
+}
+
+.calculadora__botao {
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #DFF6FF;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 24px;
+    color: #06283D;
+    transition: all 100ms;
+    border: none;
+}
+
+.calculadora__botao--igual {
+    grid-row: span 3;
+}
+
+.calculadora__botao--limpar {
+    grid-column: span 2;
+}
+
+.calculadora__botao:hover {
+    transform: scale(1.05);
+}

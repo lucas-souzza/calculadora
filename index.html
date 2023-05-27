@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./img/calculator.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <div class="calculadora__resultado" id="tela"></div>
+
+        <button class="calculadora__botao" data-action="somar">+</button>
+        <button class="calculadora__botao" data-action="subtrair">-</button>
+        <button class="calculadora__botao" data-action="multiplicar">x</button>
+        <button class="calculadora__botao" data-action="dividir">/</button>
+
+        <button class="calculadora__botao">7</button>
+        <button class="calculadora__botao">8</button>
+        <button class="calculadora__botao">9</button>
+
+        <button class="calculadora__botao calculadora__botao--igual" data-action="calcular">=</button>
+
+        <button class="calculadora__botao">4</button>
+        <button class="calculadora__botao">5</button>
+        <button class="calculadora__botao">6</button>
+        <button class="calculadora__botao">1</button>
+        <button class="calculadora__botao">2</button>
+        <button class="calculadora__botao">3</button>
+        <button class="calculadora__botao">0</button>
+
+        <button class="calculadora__botao">.</button>
+
+        <button class="calculadora__botao calculadora__botao--limpar" data-action="limpar">AC</button>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
